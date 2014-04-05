@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-04 15:00-0400\n"
+"POT-Creation-Date: 2014-04-04 20:57-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,1039 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: manage.py:7
+#, python-format
+msgid ""
+"Error: Can't find the file 'settings.py' in the directory containing %r. It "
+"appears you've customized things.\n"
+"You'll have to run django-admin.py, passing it your settings module.\n"
+"(If the file settings.py does indeed exist, it's causing an ImportError "
+"somehow.)\n"
+msgstr ""
+
+#: bi/__init__.py:87
+#, python-format
+msgid "Unknown state calculation method %s"
+msgstr ""
+
+#: bi/__init__.py:103
+#, python-format
+msgid "We have not implemented how to use status method %s"
+msgstr ""
+
+#: bi/__init__.py:239
+#, python-format
+msgid "Invalid macro in string. %s"
+msgstr ""
+
+#: bi/__init__.py:253
+#, python-format
+msgid "Could not resolve macro '%s'"
+msgstr ""
+
+#: bi/__init__.py:294
+#, python-format
+msgid "Dont know how to resolve macro named '%s'"
+msgstr ""
+
+#: bi/__init__.py:390
+#, python-format
+msgid ""
+"Cannot rename process to %s. Another process with same name already exists"
+msgstr ""
+
+#: bi/__init__.py:453
+#, python-format
+msgid "This is the %s attribute for object definition"
+msgstr ""
+
+#: bi/__init__.py:517
+#, python-format
+msgid "You are looking at the hostgorup %s"
+msgstr ""
+
+#: bi/__init__.py:634
+#, python-format
+msgid "service %(service)s on host %(host)s"
+msgstr ""
+
+#: bi/__init__.py:677
+#, python-format
+msgid "%s is not a status calculation method i know"
+msgstr ""
+
+#: bi/__init__.py:710
+#, python-format
+msgid "Failed to create host %s"
+msgstr ""
+
+#: bi/__init__.py:734
+msgid "Host not found: "
+msgstr ""
+
+#: bi/forms.py:49
+msgid "Unique name for this business process."
+msgstr ""
+
+#: bi/forms.py:52
+msgid ""
+"This is the name that will be displayed to users on this process. Usually it "
+"is the name of the system this business group represents."
+msgstr ""
+
+#: bi/forms.py:54
+msgid ""
+"Here you can put in any description of the business process you are adding. "
+"Its a good idea to write down what the business process is about and who to "
+"contact in case of downtimes."
+msgstr ""
+
+#: bi/forms.py:56
+msgid ""
+"Here you can choose which method is used to calculate the global status of "
+"this business process"
+msgstr ""
+
+#: bi/forms.py:58
+msgid ""
+"Human friendly text for this respective state. You can type whatever you "
+"want but nagios style exit codes indicate that 0 should be 'ok'"
+msgstr ""
+
+#: bi/forms.py:60
+msgid "Typically used to represent warning or performance problems"
+msgstr ""
+
+#: bi/forms.py:62
+msgid "Typically used to represent critical status"
+msgstr ""
+
+#: bi/forms.py:64
+msgid "Use this when status is unknown"
+msgstr ""
+
+#: bi/forms.py:95
+#, python-format
+msgid ""
+"Cannot rename process to %s. Another process with that name already exists"
+msgstr ""
+
+#: bi/forms.py:150
+msgid "Put here a friendly description of the graph"
+msgstr ""
+
+#: bi/tests.py:140 rest/tests.py:33 rest/tests.py:44
+#, python-format
+msgid "Expected status code 200 for page %s"
+msgstr ""
+
+#: bi/tests.py:157 bi/tests.py:170
+msgid "Empty bi process should have status unknown"
+msgstr ""
+
+#: bi/tests.py:160 bi/tests.py:173
+msgid "BI process with one ok subitem, should have state OK"
+msgstr ""
+
+#: bi/tests.py:163
+msgid "BI process with one failed item should have a critical state"
+msgstr ""
+
+#: bi/tests.py:166
+msgid "BI process using use_best_state should be returning OK"
+msgstr ""
+
+#: bi/tests.py:176
+msgid "BI subprocess that is untagged should yield an ok state"
+msgstr ""
+
+#: bi/tests.py:179
+msgid "A Non critical subprocess should yield 'minor problem'"
+msgstr ""
+
+#: bi/tests.py:182
+msgid "A critical process in failed state should yield major problem"
+msgstr ""
+
+#: bi/tests.py:185
+msgid ""
+"Adding another non critical subprocess should still yield a critical state"
+msgstr ""
+
+#: bi/tests.py:218
+#, python-format
+msgid "%(typee)s while trying to read livestatus: %(e)s"
+msgstr ""
+
+#: bi/tests.py:285
+#, python-format
+msgid ""
+"Failed to start nagios. Command: %(command_string)s\n"
+"exit codecode=%(result0)s\n"
+"stdout=%(result1)s\n"
+"stderr=%(result2)s"
+msgstr ""
+
+#: bi/tests.py:302
+msgid "non existant host processes should have unknown status"
+msgstr ""
+
+#: bi/tests.py:307
+msgid "the host ok_host should always has status ok"
+msgstr ""
+
+#: bi/views.py:59
+msgid "failed to add subprocess"
+msgstr ""
+
+#: bi/views.py:63
+msgid "I don't know what submit button was clicked. please file a bug."
+msgstr ""
+
+#: bi/views.py:94
+#, python-format
+msgid "Invalid graph string: %s"
+msgstr ""
+
+#: bi/views.py:108
+msgid "Booh! you need to supply name= to the querystring"
+msgstr ""
+
+#: bi/views.py:205
+msgid "You must specify which subprocess to add all these objects to"
+msgstr ""
+
+#: bi/views.py:231
+msgid "New Business Process"
+msgstr ""
+
+#: bi/views.py:297
+msgid "Booh, use either get or POST"
+msgstr ""
+
+#: contrib/views.py:44
+#, python-format
+msgid "Directory '%s' is empty"
+msgstr ""
+
+#: misc/forms.py:34
+msgid "General Suggestion"
+msgstr ""
+
+#: misc/forms.py:35
+msgid "I think i have found a bug"
+msgstr ""
+
+#: misc/forms.py:36
+msgid "I have a particular task in mind that i would like to do with Adagios"
+msgstr ""
+
+#: misc/forms.py:37
+msgid "I have an idea how make a certain task easier to do"
+msgstr ""
+
+#: misc/forms.py:41
+msgid "0 - Only Errors"
+msgstr ""
+
+#: misc/forms.py:42
+msgid "1 - Little logging"
+msgstr ""
+
+#: misc/forms.py:43
+msgid "2 - Log Everything"
+msgstr ""
+
+#: misc/forms.py:44
+msgid "-1 Debug mode (log all and slower processing"
+msgstr ""
+
+#: misc/forms.py:69
+msgid "Optional email address if you want feedback from us"
+msgstr ""
+
+#: misc/forms.py:74
+msgid "See below for examples of good suggestions"
+msgstr ""
+
+#: misc/forms.py:80
+msgid "Suggestion from Adagios"
+msgstr ""
+
+#: misc/forms.py:86
+#, python-format
+msgid ""
+"\n"
+"        topic: %(topic)s\n"
+"        from: %(sender)s\n"
+"\n"
+"        %(message)s\n"
+"        "
+msgstr ""
+
+#: misc/forms.py:98
+msgid "Path to nagios configuration file. i.e. /etc/nagios/nagios.cfg"
+msgstr ""
+
+#: misc/forms.py:100
+msgid "Where to save new objects that adagios creates."
+msgstr ""
+
+#: misc/forms.py:102
+msgid ""
+"URL (relative or absolute) to your nagios webcgi. Adagios will use this to "
+"make it simple to navigate from a configured host/service directly to the "
+"cgi."
+msgstr ""
+
+#: misc/forms.py:104
+msgid ""
+"Path to you nagios init script. Adagios will use this when stopping/starting/"
+"reloading nagios"
+msgstr ""
+
+#: misc/forms.py:106
+msgid ""
+"Path to you nagios daemon binary. Adagios will use this to verify config "
+"with 'nagios -v nagios_config'"
+msgstr ""
+
+#: misc/forms.py:108
+msgid ""
+"Path to MK Livestatus socket. If left empty Adagios will try to autodiscover "
+"from your nagios.cfg"
+msgstr ""
+
+#: misc/forms.py:112
+msgid "If set. Adagios will commit any changes it makes to git repository."
+msgstr ""
+
+#: misc/forms.py:114
+msgid "If set. Adagios will log any changes it makes to a file."
+msgstr ""
+
+#: misc/forms.py:117
+msgid ""
+"If set. Users in Status view will only see hosts/services they are a contact "
+"for. Unset means everyone will see everything."
+msgstr ""
+
+#: misc/forms.py:120
+msgid ""
+"If set. Enable status view which is an alternative to nagios legacy web "
+"interface. You will need to restart web server for the changes to take effect"
+msgstr ""
+
+#: misc/forms.py:123
+msgid "If set. Nagios is reloaded automatically after every change."
+msgstr ""
+
+#: misc/forms.py:125
+msgid ""
+"Adagios does not play well with SElinux. So lets issue a warning if it is "
+"active. Only disable this if you know what you are doing."
+msgstr ""
+
+#: misc/forms.py:127
+msgid ""
+"Full path to your pnp4nagios/index.php file. Adagios will use this to "
+"generate graphs"
+msgstr ""
+
+#: misc/forms.py:129
+msgid ""
+"Full or relative url to pnp4nagios web interface, adagios can use this to "
+"link directly to pnp"
+msgstr ""
+
+#: misc/forms.py:131
+msgid ""
+"Default coordinates when opening up the world map. This should be in the "
+"form of longitude,latitude"
+msgstr ""
+
+#: misc/forms.py:133
+msgid ""
+"Default Zoom level when opening up the world map. 10 is a good default value"
+msgstr ""
+
+#: misc/forms.py:135
+msgid "Include configuration options from files matching this pattern"
+msgstr ""
+
+#: misc/forms.py:141
+msgid "# Autocreated by adagios"
+msgstr ""
+
+#: misc/forms.py:229
+msgid ""
+"Reset the action_url attribute of every service check in your nagios "
+"configuration with this one. "
+msgstr ""
+
+#: misc/forms.py:269
+msgid "npcd service will have privileges of this group"
+msgstr ""
+
+#: misc/forms.py:271
+msgid "npcd service will have privileges of this user"
+msgstr ""
+
+#: misc/forms.py:273
+msgid "Define if you want to log to 'syslog' or 'file'"
+msgstr ""
+
+#: misc/forms.py:275
+msgid "If log_type is set to file. Log to this file"
+msgstr ""
+
+#: misc/forms.py:277
+msgid "Defines the maximum filesize (bytes) before logfile will rotate."
+msgstr ""
+
+#: misc/forms.py:279
+msgid "How much should we log?"
+msgstr ""
+
+#: misc/forms.py:281
+msgid "where we can find the performance data files"
+msgstr ""
+
+#: misc/forms.py:283
+msgid "execute following command for each found file in perfdata_spool_dir"
+msgstr ""
+
+#: misc/forms.py:285
+msgid "optional arguments to perfdata_file_run_cmd"
+msgstr ""
+
+#: misc/forms.py:287
+msgid "If yes, npcd will append -n to the perfdata_file_run_cmd"
+msgstr ""
+
+#: misc/forms.py:289
+msgid "Define how many parallel threads we should start"
+msgstr ""
+
+#: misc/forms.py:291
+msgid "How many seconds npcd should wait between dirscans"
+msgstr ""
+
+#: misc/forms.py:293
+msgid "npcd won't start if load is above this threshold"
+msgstr ""
+
+#: misc/forms.py:294
+msgid "Location of your pid file"
+msgstr ""
+
+#: misc/forms.py:296
+msgid ""
+"Where should npcdmod.o write the performance data. Must not be same "
+"directory as perfdata_spool_dir"
+msgstr ""
+
+#: misc/forms.py:298
+msgid "Filename for the spooled files"
+msgstr ""
+
+#: misc/forms.py:300
+msgid "Interval between file processing"
+msgstr ""
+
+#: misc/forms.py:349
+msgid ""
+"Full path to your npcdmod.o broker module that shipped with your pnp4nagios "
+"installation"
+msgstr ""
+
+#: misc/forms.py:351
+msgid ""
+"Full path to your npcd.cfg that shipped with your pnp4nagios installation"
+msgstr ""
+
+#: misc/forms.py:353
+msgid "-1"
+msgstr ""
+
+#: misc/forms.py:355
+msgid ""
+"PNP Needs the nagios option process_performance_data enabled to function. "
+"Make sure it is enabled."
+msgstr ""
+
+#: misc/forms.py:475
+msgid "Unknown command"
+msgstr ""
+
+#: misc/forms.py:520
+msgid "E-mail address"
+msgstr ""
+
+#: misc/forms.py:525
+msgid "Message that is to be sent to recipients"
+msgstr ""
+
+#: misc/forms.py:529
+msgid "If checked, you will be added automatically to CC"
+msgstr ""
+
+#: misc/forms.py:533
+msgid "If checked, also acknowledge all problems as they are sent"
+msgstr ""
+
+#: misc/forms.py:541
+msgid "There is now HTML content with this message."
+msgstr ""
+
+#: misc/forms.py:550
+#, python-format
+msgid "%s sent you a a message through adagios"
+msgstr ""
+
+#: misc/forms.py:568
+#, python-format
+msgid "Sent mail to %s"
+msgstr ""
+
+#: misc/helpers.py:148
+#, python-format
+msgid ""
+"identifier must be in the form of host_name::service_description::"
+"attribute_name (got %s)"
+msgstr ""
+
+#: misc/helpers.py:154
+#, python-format
+msgid "Could not find service %s"
+msgstr ""
+
+#: misc/helpers.py:176
+#, python-format
+msgid "Object successfully copied to %s"
+msgstr ""
+
+#: misc/helpers.py:188
+msgid "Running check commands is disabled in demo-environment"
+msgstr ""
+
+#: misc/helpers.py:233
+msgid "success"
+msgstr ""
+
+#: misc/helpers.py:234
+msgid "Nagios Successfully reloaded"
+msgstr ""
+
+#: misc/helpers.py:236
+msgid "error"
+msgstr ""
+
+#: misc/helpers.py:237
+msgid "Failed to reload nagios (do you have enough permissions?)"
+msgstr ""
+
+#: misc/rest.py:108
+#, python-format
+msgid "Task not '%s' Found"
+msgstr ""
+
+#: misc/views.py:75
+#, python-format
+msgid "%s successfully saved."
+msgstr ""
+
+#: misc/views.py:79
+msgid "We only support methods GET or POST"
+msgstr ""
+
+#: misc/views.py:120
+msgid "bulk commit by adagios"
+msgstr ""
+
+#: misc/views.py:127
+msgid "No files selected."
+msgstr ""
+
+#: misc/views.py:129
+#, python-format
+msgid "%s files successfully commited."
+msgstr ""
+
+#: misc/views.py:231
+msgid "Broker Module updated in nagios.cfg"
+msgstr ""
+
+#: misc/views.py:236
+#, python-format
+msgid "Action_url updated for %s services"
+msgstr ""
+
+#: misc/views.py:240
+#, python-format
+msgid "%s services could not be updated (check permissions?)"
+msgstr ""
+
+#: misc/views.py:246
+msgid "npcd.cfg updated"
+msgstr ""
+
+#: misc/views.py:293
+#, python-format
+msgid "Security violation. You are not allowed to edit %s"
+msgstr ""
+
+#: misc/views.py:326
+msgid "Not allowed to see this image"
+msgstr ""
+
+#: misc/views.py:359
+#, python-format
+msgid "Host %s not found. Maybe a typo or you do not have access to it."
+msgstr ""
+
+#: misc/views.py:364
+msgid "Host Status"
+msgstr ""
+
+#: misc/views.py:377
+#, python-format
+msgid ""
+"Service \"%s\"\" not found. Maybe a typo or you do not have access to it ?"
+msgstr ""
+
+#: misc/views.py:382
+#, python-format
+msgid "AttributeError for '%(i)s': %(e)s"
+msgstr ""
+
+#: misc/views.py:384
+#, python-format
+msgid "Error adding service '%(i)s': %(e)s"
+msgstr ""
+
+#: okconfig_/forms.py:13
+msgid "Select a host"
+msgstr ""
+
+#: okconfig_/forms.py:19
+#, python-format
+msgid "Standard %(service_template)s checks"
+msgstr ""
+
+#: okconfig_/forms.py:28
+msgid "Select a service"
+msgstr ""
+
+#: okconfig_/forms.py:43
+msgid "not a valid netmask"
+msgstr ""
+
+#: okconfig_/forms.py:45 okconfig_/forms.py:48
+msgid "not a valid ip address"
+msgstr ""
+
+#: okconfig_/forms.py:72
+msgid "Example: databases"
+msgstr ""
+
+#: okconfig_/forms.py:73
+msgid "Human friendly name for the group"
+msgstr ""
+
+#: okconfig_/forms.py:75
+msgid "Overwrite group if it already exists."
+msgstr ""
+
+#: okconfig_/forms.py:79
+msgid "Name of the host to add"
+msgstr ""
+
+#: okconfig_/forms.py:80
+msgid "IP Address of this host"
+msgstr ""
+
+#: okconfig_/forms.py:82
+msgid "host/contact group to put this host in"
+msgstr ""
+
+#: okconfig_/forms.py:84 okconfig_/forms.py:112
+msgid "Add standard template of checks to this host"
+msgstr ""
+
+#: okconfig_/forms.py:86
+msgid "Overwrite host if it already exists."
+msgstr ""
+
+#: okconfig_/forms.py:101 okconfig_/forms.py:129
+#, python-format
+msgid "template %s was not found"
+msgstr ""
+
+#: okconfig_/forms.py:104
+msgid "Host name already exists. Use force to overwrite"
+msgstr ""
+
+#: okconfig_/forms.py:110
+msgid "Add templates to this host"
+msgstr ""
+
+#: okconfig_/forms.py:114
+msgid "Overwrites templates if they already exist"
+msgstr ""
+
+#: okconfig_/forms.py:132
+msgid "Host name not found Use force to write template anyway"
+msgstr ""
+
+#: okconfig_/forms.py:146
+msgid "Host or ip address"
+msgstr ""
+
+#: okconfig_/forms.py:148
+msgid ""
+"Make sure firewalls are not blocking ports 22(for ssh) or 445(for winexe)"
+msgstr ""
+
+#: okconfig_/forms.py:149
+msgid "auto detect"
+msgstr ""
+
+#: okconfig_/forms.py:151
+msgid "Log into remote machine with as this user"
+msgstr ""
+
+#: okconfig_/forms.py:153
+msgid "Leave empty if using kerberos or ssh keys"
+msgstr ""
+
+#: okconfig_/forms.py:155
+msgid "If remote machine is running a windows domain"
+msgstr ""
+
+#: okconfig_/forms.py:159
+msgid "Select which host to edit"
+msgstr ""
+
+#: okconfig_/forms.py:168
+msgid "Select host which you want to add service check to"
+msgstr ""
+
+#: okconfig_/forms.py:170
+msgid "Select which service check you want to add to this host"
+msgstr ""
+
+#: okconfig_/tests.py:17
+#, python-format
+msgid "Failed on test: %s"
+msgstr ""
+
+#: okconfig_/views.py:72
+#, python-format
+msgid "error adding group: %s"
+msgstr ""
+
+#: okconfig_/views.py:74 okconfig_/views.py:109
+msgid "Could not validate input"
+msgstr ""
+
+#: okconfig_/views.py:107
+#, python-format
+msgid "error adding host: %s"
+msgstr ""
+
+#: okconfig_/views.py:135
+msgid "Template was successfully added to host."
+msgstr ""
+
+#: okconfig_/views.py:140 okconfig_/views.py:177
+msgid "Could not validate form"
+msgstr ""
+
+#: okconfig_/views.py:190
+msgid "There seems to be a problem with your okconfig installation"
+msgstr ""
+
+#: okconfig_/views.py:221
+msgid "Unknown parameter encountered:"
+msgstr ""
+
+#: okconfig_/views.py:223
+msgid "Ignoring unknown parameter"
+msgstr ""
+
+#: okconfig_/views.py:226
+msgid ""
+"NT_STATUS_LOGON_FAILURE usually means there is a problem with username or "
+"password. Are you using correct domain ?"
+msgstr ""
+
+#: okconfig_/views.py:228
+msgid ""
+"The security settings on the remote windows host might forbid logins if the "
+"host name specified does not match the computername on the server. Try again "
+"with either correct hostname or the ip address of the server."
+msgstr ""
+
+#: okconfig_/views.py:230
+#, python-format
+msgid ""
+"Please make sure that %(admin)s is a local administrator on host %(host)s"
+msgstr ""
+
+#: okconfig_/views.py:233
+msgid "No nsclient copy found "
+msgstr ""
+
+#: okconfig_/views.py:239
+msgid "invalid input"
+msgstr ""
+
+#: okconfig_/views.py:259
+#, python-format
+msgid "Host %s not found"
+msgstr ""
+
+#: okconfig_/views.py:278
+#, python-format
+msgid "'%s' successfully saved."
+msgstr ""
+
+#: okconfig_/views.py:281
+#, python-format
+msgid "Failed to save service %(service)s: %(exc)s"
+msgstr ""
+
+#: okconfig_/views.py:284
+#, python-format
+msgid "invalid data in %s"
+msgstr ""
+
+#: okconfig_/views.py:323
+msgid "could not validate form"
+msgstr ""
+
+#: okconfig_/views.py:332
+msgid "Error running scan"
+msgstr ""
+
+#: rest/tests.py:34
+msgid "Expected 'addresslist' to appear in response"
+msgstr ""
+
+#: rest/tests.py:36
+#, python-format
+msgid "Unhandled exception while loading %(path)s: %(exc)s"
+msgstr ""
+
+#: rest/tests.py:46
+#, python-format
+msgid "Unhandled exception while loading %(url)s: %(exc)s"
+msgstr ""
+
+#: rest/views.py:76
+#, python-format
+msgid "Unsupported operation: %s"
+msgstr ""
+
+#: rest/views.py:93
+#, python-format
+msgid "Unsupported format: '%s'. Valid formats: json xml txt"
+msgstr ""
+
+#: status/templates/base_status.html:14
+msgid "Status"
+msgstr ""
+
+#: status/templates/base_status.html:31
+msgid "Open Problems"
+msgstr ""
+
+#: status/templates/base_status.html:32
+msgid "All Problems"
+msgstr ""
+
+#: status/templates/base_status.html:33
+msgid "All Acknowledged"
+msgstr ""
+
+#: status/templates/base_status.html:34
+msgid "All in Downtime"
+msgstr ""
+
+#: status/templates/base_status.html:35
+msgid "All OK"
+msgstr ""
+
+#: status/templates/base_status.html:36
+msgid "Everything"
+msgstr ""
+
+#: status/templates/base_status.html:46 status/templates/base_status.html:49
+#: status/templates/base_status.html:52
+msgid "Running..."
+msgstr ""
+
+#: status/templates/base_status.html:47
+msgid "Recheck"
+msgstr ""
+
+#: status/templates/base_status.html:50
+msgid "Acknowledge"
+msgstr ""
+
+#: status/templates/base_status.html:53
+msgid "Downtime"
+msgstr ""
+
+#: status/templates/base_status.html:79
+msgid "Add to business process"
+msgstr ""
+
+#: status/templates/base_status.html:84
+msgid "Add to contactgroup"
+msgstr ""
+
+#: status/templates/base_status.html:89
+msgid "Add to servicegroup"
+msgstr ""
+
+#: status/templates/base_status.html:94
+msgid "Remove Acknowledgement"
+msgstr ""
+
+#: status/templates/base_status.html:99
+msgid "Remove active downtimes"
+msgstr ""
+
+#: status/templates/base_status.html:137
+msgid "Acknowledge problem"
+msgstr ""
+
+#: status/templates/base_status.html:140
+msgid ""
+"Acknowledge means that someone is handling this problem. It will no longer "
+"be marked as unhandled and Nagios will stop sending notifications about it "
+"until it goes back to OK status."
+msgstr ""
+
+#: status/templates/base_status.html:143 status/templates/base_status.html:178
+msgid "Author"
+msgstr ""
+
+#: status/templates/base_status.html:155
+msgid "Other people looking at this service will see this comment"
+msgstr ""
+
+#: status/templates/base_status.html:160 status/templates/base_status.html:235
+msgid "Cancel"
+msgstr ""
+
+#: status/templates/base_status.html:161
+msgid "Acknowledge Problem"
+msgstr ""
+
+#: status/templates/base_status.html:172 status/templates/base_status.html:236
+msgid "Schedule Downtime"
+msgstr ""
+
+#: status/templates/base_status.html:175
+msgid ""
+"Putting hosts and services into scheduled downtime means they are expected "
+"to fail during that period. Nagios will not send out any notifications "
+"during scheduled downtime and problems will not show up as unhandled "
+"problems."
+msgstr ""
+
+#: status/templates/base_status.html:186
+msgid "Start Time"
+msgstr ""
+
+#: status/templates/base_status.html:201
+msgid "End Time"
+msgstr ""
+
+#: status/templates/base_status.html:216
+msgid "Comment"
+msgstr ""
+
+#: status/templates/base_status.html:219
+msgid "Write some comment"
+msgstr ""
+
+#: status/templates/base_status.html:220
+msgid "Other people looking at this service will see this comment."
+msgstr ""
+
+#: status/templates/base_status.html:228
+msgid "Apply to selected hosts and all their services"
+msgstr ""
+
+#: status/templates/base_status.html:246
+msgid "Mail"
+msgstr ""
+
+#: status/templates/status_error.html:4
+msgid "Error"
+msgstr ""
+
+#: status/templates/status_error.html:6
+msgid "Oh no, something went wrong ☹"
+msgstr ""
+
+#: status/templates/status_error.html:24
+msgid "Install instructions for rpm-based systems:"
+msgstr ""
+
+#: status/templates/status_error.html:30
+msgid "Install instructions for debian-based systems:"
+msgstr ""
+
+#: status/templates/status_error.html:44
+msgid ""
+"Don't worry you can still configure stuff but you might want to start it so "
+"you can start monitoring stuff."
+msgstr ""
+
+#: status/templates/status_error.html:51
+msgid ""
+"check that nagios is in fact running and sudoers.d is correctly configured."
+msgstr ""
+
+#: status/templates/status_error.html:63
+msgid ""
+"So! Adagios is up and running. But you need to install and configure a "
+"monitoring engine."
+msgstr ""
+
+#: status/templates/status_error.html:77
+msgid ""
+"So! Seems like your configuration directory is not a git repository but "
+"Adagios was configured to that it uses git."
+msgstr ""
+
+#: status/templates/status_error.html:82
+msgid ""
+"You configuration files should always be a git repository anyway, so this is "
+"for your own good :)"
+msgstr ""
+
+#: status/templates/status_error.html:97
+msgid "show debug information"
+msgstr ""
+
+#: status/templates/status_services.html:4
+msgid "Status Overview"
+msgstr ""
+
+#: status/templates/status_services.html:6
+msgid "Service Overview"
+msgstr ""
+
+#: status/templates/status_services.html:8
+msgid "Services"
+msgstr ""
 
 #: status/templatetags/adagiostags.py:82
 msgid " and "
