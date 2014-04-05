@@ -92,23 +92,23 @@
 
 5
 
-./adagios/objectbrowser/templates/add_to_group.html
-./adagios/objectbrowser/templates/list_object_types.html
-./adagios/objectbrowser/templates/edit_command.html
-./adagios/objectbrowser/templates/edit_service.html
-./adagios/objectbrowser/templates/edit_contactgroup.html
-./adagios/objectbrowser/templates/edit_servicedependency.html
-./adagios/objectbrowser/templates/add_object.html
-./adagios/objectbrowser/templates/delete_object.html
-./adagios/objectbrowser/templates/edit_contact.html
-./adagios/objectbrowser/templates/base_objectbrowser.html
-./adagios/objectbrowser/templates/error.html
-./adagios/objectbrowser/templates/bulk_delete.html
-./adagios/objectbrowser/templates/edit_configfile.html
-./adagios/objectbrowser/templates/edit_hostdependency.html
-./adagios/objectbrowser/templates/edit_object.html
-./adagios/objectbrowser/templates/show_plugins.html
-./adagios/objectbrowser/templates/bulk_edit.html
+./adagios/objectbrowser/templates/add_to_group.html OK
+./adagios/objectbrowser/templates/list_object_types.html OK
+./adagios/objectbrowser/templates/edit_command.html OK
+./adagios/objectbrowser/templates/edit_service.html OK
+./adagios/objectbrowser/templates/edit_contactgroup.html OK
+./adagios/objectbrowser/templates/edit_servicedependency.html OK
+./adagios/objectbrowser/templates/add_object.html OK
+./adagios/objectbrowser/templates/delete_object.html OK
+./adagios/objectbrowser/templates/edit_contact.html OK
+./adagios/objectbrowser/templates/base_objectbrowser.html OK
+./adagios/objectbrowser/templates/error.html OK
+./adagios/objectbrowser/templates/bulk_delete.html OK
+./adagios/objectbrowser/templates/edit_configfile.html OK
+./adagios/objectbrowser/templates/edit_hostdependency.html OK
+./adagios/objectbrowser/templates/edit_object.html OK
+./adagios/objectbrowser/templates/show_plugins.html OK
+./adagios/objectbrowser/templates/bulk_edit.html Ok
 ./adagios/objectbrowser/templates/bulk_copy.html
 ./adagios/objectbrowser/templates/edit_hostgroup.html
 ./adagios/objectbrowser/templates/edit_servicegroup.html
