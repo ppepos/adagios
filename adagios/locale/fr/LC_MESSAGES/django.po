@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-04 20:57-0400\n"
+"POT-Creation-Date: 2014-04-04 21:25-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: context_processors.py:244
+#, python-format
+msgid "Destination for new objects (%s) is not defined in nagios.cfg"
+msgstr ""
+
+#: context_processors.py:247
+#, python-format
+msgid ""
+"Destination directory for new objects (%s) is not found. Please create it."
+msgstr ""
+
+#: context_processors.py:273
+msgid ""
+"SELinux is enabled, which is likely to give your monitoring engine "
+"problems., see <a href=\"https://access.redhat.com/knowledge/docs/en-US/"
+"Red_Hat_Enterprise_Linux/6/html-single/Security-Enhanced_Linux/index."
+"html#sect-Security-Enhanced_Linux-Enabling_and_Disabling_SELinux-"
+"Disabling_SELinux\">here</a> for information on how to disable it."
+msgstr ""
+
 #: manage.py:7
 #, python-format
 msgid ""
@@ -26,6 +46,18 @@ msgid ""
 "You'll have to run django-admin.py, passing it your settings module.\n"
 "(If the file settings.py does indeed exist, it's causing an ImportError "
 "somehow.)\n"
+msgstr ""
+
+#: utils.py:44
+msgid "Adding Task:"
+msgstr ""
+
+#: utils.py:54
+msgid "{done}/{total} done."
+msgstr ""
+
+#: views.py:45
+msgid "Error occured, but no error messages provided, what happened?"
 msgstr ""
 
 #: bi/__init__.py:87
@@ -88,58 +120,58 @@ msgstr ""
 msgid "Host not found: "
 msgstr ""
 
-#: bi/forms.py:49
+#: bi/forms.py:49 status/forms.py:58
 msgid "Unique name for this business process."
 msgstr ""
 
-#: bi/forms.py:52
+#: bi/forms.py:52 status/forms.py:61
 msgid ""
 "This is the name that will be displayed to users on this process. Usually it "
 "is the name of the system this business group represents."
 msgstr ""
 
-#: bi/forms.py:54
+#: bi/forms.py:54 status/forms.py:63
 msgid ""
 "Here you can put in any description of the business process you are adding. "
 "Its a good idea to write down what the business process is about and who to "
 "contact in case of downtimes."
 msgstr ""
 
-#: bi/forms.py:56
+#: bi/forms.py:56 status/forms.py:65
 msgid ""
 "Here you can choose which method is used to calculate the global status of "
 "this business process"
 msgstr ""
 
-#: bi/forms.py:58
+#: bi/forms.py:58 status/forms.py:67
 msgid ""
 "Human friendly text for this respective state. You can type whatever you "
 "want but nagios style exit codes indicate that 0 should be 'ok'"
 msgstr ""
 
-#: bi/forms.py:60
+#: bi/forms.py:60 status/forms.py:69
 msgid "Typically used to represent warning or performance problems"
 msgstr ""
 
-#: bi/forms.py:62
+#: bi/forms.py:62 status/forms.py:71
 msgid "Typically used to represent critical status"
 msgstr ""
 
-#: bi/forms.py:64
+#: bi/forms.py:64 status/forms.py:73
 msgid "Use this when status is unknown"
 msgstr ""
 
-#: bi/forms.py:95
+#: bi/forms.py:95 status/forms.py:104
 #, python-format
 msgid ""
 "Cannot rename process to %s. Another process with that name already exists"
 msgstr ""
 
-#: bi/forms.py:150
+#: bi/forms.py:150 status/forms.py:159
 msgid "Put here a friendly description of the graph"
 msgstr ""
 
-#: bi/tests.py:140 rest/tests.py:33 rest/tests.py:44
+#: bi/tests.py:140 rest/tests.py:33 rest/tests.py:44 status/tests.py:68
 #, python-format
 msgid "Expected status code 200 for page %s"
 msgstr ""
@@ -228,9 +260,125 @@ msgstr ""
 msgid "Booh, use either get or POST"
 msgstr ""
 
+#: contrib/__init__.py:22
+#, python-format
+msgid "'%s' is outside contrib dir"
+msgstr ""
+
 #: contrib/views.py:44
 #, python-format
 msgid "Directory '%s' is empty"
+msgstr ""
+
+#: contrib/lib/dashboards/bi.html:10
+msgid "BI Angular Test"
+msgstr ""
+
+#: contrib/lib/dashboards/bi.html:13
+msgid "Hello World."
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:4
+msgid "Service Status Dashboard"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:27
+msgid "Status Dashboard"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:29
+#, python-format
+msgid ""
+"You are %(request.META.REMOTE_USER)s coming from "
+"%(request.META.REMOTE_ADDR)s."
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:37
+msgid "Hosts."
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:38
+msgid "Services."
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:41
+msgid "Unhandled Service problems."
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:42
+msgid "Unhandled Host Problems!"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:51
+msgid "Hosts Down"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:55
+msgid "Critical Issues"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:59
+msgid "Hosts Acknowledged Down"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:68
+msgid "Minor Issues"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:71
+msgid "Acknowledged Criticals"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:74
+msgid "Acknowledged Minor Issues"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:93
+#: contrib/lib/dashboards/raymii.html:109
+msgid "<a href="
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:101
+msgid "Everything is looking good!"
+msgstr ""
+
+#: contrib/lib/dashboards/raymii.html:116
+#: status/templates/status_index.html:109
+msgid "Loading..."
+msgstr ""
+
+#: contrib/lib/examples/boilerplate01.html:24
+msgid ""
+"Stuff the main content of your view in here. Your main content should go in "
+"here."
+msgstr ""
+
+#: contrib/lib/examples/boilerplate01.html:28
+#: contrib/lib/experimental/network_parents.html:62
+msgid "Toolbar goes here"
+msgstr ""
+
+#: contrib/lib/examples/hello_world.html:3
+msgid "Hello World"
+msgstr ""
+
+#: contrib/lib/examples/list_all_hosts.html:9
+#: contrib/templates/contrib_index.html:9
+msgid "contrib"
+msgstr ""
+
+#: contrib/templates/contrib_index.html:17
+#, python-format
+msgid ""
+"Here you can see a list of user contributed views for Adagios. You can make "
+"your own\n"
+"        from <i>%(settings.contrib_dir)s</i>."
+msgstr ""
+
+#: contrib/templates/contrib_index.html:21
+msgid ""
+"Please see the examples below for assistance on creating your own custom "
+"views."
 msgstr ""
 
 #: misc/forms.py:34
@@ -629,6 +777,647 @@ msgstr ""
 msgid "Error adding service '%(i)s': %(e)s"
 msgstr ""
 
+#: objectbrowser/forms.py:60
+msgid "Select some options"
+msgstr ""
+
+#: objectbrowser/forms.py:165
+msgid "Object successfully saved"
+msgstr ""
+
+#: objectbrowser/forms.py:238 objectbrowser/forms.py:250
+#: objectbrowser/forms.py:257 objectbrowser/forms.py:262
+#: objectbrowser/forms.py:267 objectbrowser/forms.py:293
+#: objectbrowser/forms.py:296
+#, python-format
+msgid "No %(field_name)s selected"
+msgstr ""
+
+#: objectbrowser/forms.py:243 objectbrowser/forms.py:274
+#, python-format
+msgid "No %s selected"
+msgstr ""
+
+#: objectbrowser/forms.py:303 objectbrowser/forms.py:407
+msgid "No help available for this item"
+msgstr ""
+
+#: objectbrowser/forms.py:332
+#, python-format
+msgid "%(inherited_value)s (inherited from template)"
+msgstr ""
+
+#: objectbrowser/forms.py:347
+msgid "Insert some value here"
+msgstr ""
+
+#: objectbrowser/forms.py:365
+msgid "Set to 1 if you want this object enabled."
+msgstr ""
+
+#: objectbrowser/forms.py:366
+msgid "Generic Name"
+msgstr ""
+
+#: objectbrowser/forms.py:367
+msgid ""
+"This name is used if you want other objects to inherit (with the use "
+"attribute) what you have defined here."
+msgstr ""
+
+#: objectbrowser/forms.py:368
+msgid "Use"
+msgstr ""
+
+#: objectbrowser/forms.py:369
+msgid "Inherit all settings from another object"
+msgstr ""
+
+#: objectbrowser/forms.py:443
+msgid "Delete Services"
+msgstr ""
+
+#: objectbrowser/forms.py:444
+msgid "Check this box if you also want to delete all services of this host"
+msgstr ""
+
+#: objectbrowser/forms.py:474
+#, python-format
+msgid "Select a new generic name for this %(object_type)s"
+msgstr ""
+
+#: objectbrowser/forms.py:478
+msgid "Select a new host name for this host"
+msgstr ""
+
+#: objectbrowser/forms.py:480
+msgid "Select a new ip address for this host"
+msgstr ""
+
+#: objectbrowser/forms.py:482
+msgid "Check this box if you also want to copy all services of this host."
+msgstr ""
+
+#: objectbrowser/forms.py:486
+msgid "Select a new host name for this service"
+msgstr ""
+
+#: objectbrowser/forms.py:488
+msgid "Select new service description for this service"
+msgstr ""
+
+#: objectbrowser/forms.py:495
+#, python-format
+msgid "Please specify a new %(field_name)s"
+msgstr ""
+
+#: objectbrowser/forms.py:517 objectbrowser/forms.py:786
+#, python-format
+msgid "A %(object_type)s with %(field_name)s='%(value)s' already exists."
+msgstr ""
+
+#: objectbrowser/forms.py:630
+msgid "Yes, I am sure"
+msgstr ""
+
+#: objectbrowser/forms.py:669
+msgid "Object type is required"
+msgstr ""
+
+#: objectbrowser/forms.py:674
+#, python-format
+msgid "We dont know nothing about how to add a '%(object_type)s'"
+msgstr ""
+
+#: objectbrowser/forms.py:680
+#, python-format
+msgid "A %(object_type)s with name='%(name)s' already exists."
+msgstr ""
+
+#: objectbrowser/forms.py:700
+msgid "Inherit attributes from this template"
+msgstr ""
+
+#: objectbrowser/forms.py:708
+msgid "Tell us which host this service check will be applied to"
+msgstr ""
+
+#: objectbrowser/forms.py:710
+msgid ""
+"If you specify any hostgroups, this service will be applied to all hosts in "
+"that hostgroup"
+msgstr ""
+
+#: objectbrowser/forms.py:729
+msgid "Please specify either hostgroup_name or host_name"
+msgstr ""
+
+#: objectbrowser/forms.py:757
+#, python-format
+msgid "Could not find host called '%(i)s'"
+msgstr ""
+
+#: objectbrowser/forms.py:771
+#, python-format
+msgid "Could not find hostgroup called '%(i)s'"
+msgstr ""
+
+#: objectbrowser/help_text.py:28
+msgid "Specifies which object to inherit settings from"
+msgstr ""
+
+#: objectbrowser/help_text.py:30
+msgid "Specifies if object is active (registered) or not"
+msgstr ""
+
+#: objectbrowser/help_text.py:32
+msgid "Generic name of this objects. Only used for templates."
+msgstr ""
+
+#: objectbrowser/help_text.py:33 objectbrowser/help_text.py:101
+msgid "e.g. web01.example.com"
+msgstr ""
+
+#: objectbrowser/help_text.py:34
+msgid "e.g. My Monitored Host"
+msgstr ""
+
+#: objectbrowser/help_text.py:35 objectbrowser/help_text.py:59
+#: objectbrowser/help_text.py:60 objectbrowser/help_text.py:61
+#: objectbrowser/help_text.py:62 objectbrowser/help_text.py:63
+#: objectbrowser/help_text.py:64 objectbrowser/help_text.py:65
+#: objectbrowser/help_text.py:66 objectbrowser/help_text.py:67
+#: objectbrowser/help_text.py:68 objectbrowser/help_text.py:69
+#: objectbrowser/help_text.py:70 objectbrowser/help_text.py:71
+#: objectbrowser/help_text.py:72 objectbrowser/help_text.py:73
+#: objectbrowser/help_text.py:74 objectbrowser/help_text.py:75
+#: objectbrowser/help_text.py:76 objectbrowser/help_text.py:77
+#: objectbrowser/help_text.py:78 objectbrowser/help_text.py:79
+#: objectbrowser/help_text.py:80 objectbrowser/help_text.py:81
+#: objectbrowser/help_text.py:82 objectbrowser/help_text.py:83
+#: objectbrowser/help_text.py:84 objectbrowser/help_text.py:85
+#: objectbrowser/help_text.py:86 objectbrowser/help_text.py:99
+#: objectbrowser/help_text.py:106 objectbrowser/help_text.py:109
+#: objectbrowser/help_text.py:112 objectbrowser/help_text.py:125
+#: objectbrowser/help_text.py:126 objectbrowser/help_text.py:127
+#: objectbrowser/help_text.py:128 objectbrowser/help_text.py:129
+#: objectbrowser/help_text.py:130 objectbrowser/help_text.py:131
+#: objectbrowser/help_text.py:132 objectbrowser/help_text.py:133
+#: objectbrowser/help_text.py:134 objectbrowser/help_text.py:135
+#: objectbrowser/help_text.py:136 objectbrowser/help_text.py:137
+#: objectbrowser/help_text.py:138 objectbrowser/help_text.py:141
+#: objectbrowser/help_text.py:142 objectbrowser/help_text.py:147
+#: objectbrowser/help_text.py:148 objectbrowser/help_text.py:149
+#: objectbrowser/help_text.py:150 objectbrowser/help_text.py:151
+#: objectbrowser/help_text.py:152 objectbrowser/help_text.py:197
+#: objectbrowser/help_text.py:198 objectbrowser/help_text.py:211
+#: objectbrowser/help_text.py:212 objectbrowser/help_text.py:213
+#: objectbrowser/help_text.py:219 objectbrowser/help_text.py:221
+#: objectbrowser/help_text.py:223 objectbrowser/help_text.py:224
+#: objectbrowser/help_text.py:225 objectbrowser/help_text.py:227
+#: objectbrowser/help_text.py:228 objectbrowser/help_text.py:230
+#: objectbrowser/help_text.py:232 objectbrowser/help_text.py:233
+#: objectbrowser/help_text.py:234 objectbrowser/help_text.py:235
+#: objectbrowser/help_text.py:236 objectbrowser/help_text.py:238
+#: objectbrowser/help_text.py:239 objectbrowser/help_text.py:240
+#: objectbrowser/help_text.py:241 objectbrowser/help_text.py:242
+#: objectbrowser/help_text.py:244 objectbrowser/help_text.py:245
+#: objectbrowser/help_text.py:246 objectbrowser/help_text.py:247
+#: objectbrowser/help_text.py:249 objectbrowser/help_text.py:250
+#: objectbrowser/help_text.py:251 objectbrowser/help_text.py:252
+#: objectbrowser/help_text.py:254 objectbrowser/help_text.py:256
+#: objectbrowser/help_text.py:257 objectbrowser/help_text.py:258
+#: objectbrowser/help_text.py:259 objectbrowser/help_text.py:260
+#: objectbrowser/help_text.py:261 objectbrowser/help_text.py:262
+#: objectbrowser/help_text.py:263 objectbrowser/help_text.py:264
+#: objectbrowser/help_text.py:265 objectbrowser/help_text.py:266
+#: objectbrowser/help_text.py:267 objectbrowser/help_text.py:268
+#: objectbrowser/help_text.py:269 objectbrowser/help_text.py:270
+#: objectbrowser/help_text.py:271 objectbrowser/help_text.py:272
+#: objectbrowser/help_text.py:273 objectbrowser/help_text.py:274
+#: objectbrowser/help_text.py:275 objectbrowser/help_text.py:276
+#: objectbrowser/help_text.py:277 objectbrowser/help_text.py:278
+#: objectbrowser/help_text.py:279 objectbrowser/help_text.py:280
+#: objectbrowser/help_text.py:281 objectbrowser/help_text.py:282
+#: objectbrowser/help_text.py:283
+msgid " "
+msgstr ""
+
+#: objectbrowser/help_text.py:36
+msgid "e.g. 127.0.0.1"
+msgstr ""
+
+#: objectbrowser/help_text.py:38
+msgid ""
+"Network parents of this host. No notification will be sent if parent is down."
+msgstr ""
+
+#: objectbrowser/help_text.py:40
+msgid "Which hostgroups this host belongs to"
+msgstr ""
+
+#: objectbrowser/help_text.py:42
+msgid "Command to execute when this object is checked"
+msgstr ""
+
+#: objectbrowser/help_text.py:44
+msgid ""
+"By default Nagios will assume that all hosts are in UP states when it "
+"starts. You can override the initial state for a host by using this "
+"directive. Valid options are: o = UP, d = DOWN, and u = UNREACHABLE."
+msgstr ""
+
+#: objectbrowser/help_text.py:46
+msgid "How many failures do occur before notifications will be sent"
+msgstr ""
+
+#: objectbrowser/help_text.py:48 objectbrowser/help_text.py:116
+msgid "How many minutes to wait between checks"
+msgstr ""
+
+#: objectbrowser/help_text.py:50
+msgid ""
+"How many minutes to wait between checks when object goes to warning or "
+"critical state"
+msgstr ""
+
+#: objectbrowser/help_text.py:52
+msgid "Whether Nagios actively checks this host"
+msgstr ""
+
+#: objectbrowser/help_text.py:54
+msgid "Whether Nagios passively accepts check results from an external source"
+msgstr ""
+
+#: objectbrowser/help_text.py:56
+msgid "When nagios checks for this host"
+msgstr ""
+
+#: objectbrowser/help_text.py:58
+msgid ""
+"This directive determines whether or not checks for the host will be "
+"\"obsessed\" over using the ochp_command."
+msgstr ""
+
+#: objectbrowser/help_text.py:88
+msgid "Unique name for this hostgroup (e.g. webservers)"
+msgstr ""
+
+#: objectbrowser/help_text.py:90
+msgid "Human friendly name (e.g. My Web Servers)"
+msgstr ""
+
+#: objectbrowser/help_text.py:92
+msgid "List of hosts that belong to this group"
+msgstr ""
+
+#: objectbrowser/help_text.py:94
+msgid "List of hostgroups that belong to this group"
+msgstr ""
+
+#: objectbrowser/help_text.py:96
+msgid "You can put your custom notes here for your hostgroup"
+msgstr ""
+
+#: objectbrowser/help_text.py:98
+msgid "Type in an url for example to a documentation site for this hostgroup"
+msgstr ""
+
+#: objectbrowser/help_text.py:103
+msgid "Hostgroup this service belongs to"
+msgstr ""
+
+#: objectbrowser/help_text.py:105
+msgid "e.g. 'Disk Status'"
+msgstr ""
+
+#: objectbrowser/help_text.py:108
+msgid "Servicegroups that this service belongs to"
+msgstr ""
+
+#: objectbrowser/help_text.py:111
+msgid "Command that is executed when this service is checked"
+msgstr ""
+
+#: objectbrowser/help_text.py:114
+msgid "How many times to try before failure notifications are sent out"
+msgstr ""
+
+#: objectbrowser/help_text.py:118
+msgid "How many minutes to wait between checks when failure occurs"
+msgstr ""
+
+#: objectbrowser/help_text.py:120
+msgid "Enable if you want nagios to actively check this service"
+msgstr ""
+
+#: objectbrowser/help_text.py:122
+msgid ""
+"Enable if you want nagios to passively accept check results from an external "
+"source"
+msgstr ""
+
+#: objectbrowser/help_text.py:124
+msgid "Period which this service is checked."
+msgstr ""
+
+#: objectbrowser/help_text.py:140
+msgid "Period which notifications are sent out for this service"
+msgstr ""
+
+#: objectbrowser/help_text.py:144
+msgid "Which contacts to notify if service fails"
+msgstr ""
+
+#: objectbrowser/help_text.py:146
+msgid "Which contactgroups to send notifications to if service fails"
+msgstr ""
+
+#: objectbrowser/help_text.py:154
+msgid "Unique name for this service group"
+msgstr ""
+
+#: objectbrowser/help_text.py:156
+msgid "Human friendly name for this servicegroup"
+msgstr ""
+
+#: objectbrowser/help_text.py:158
+msgid ""
+"List of services that belong to this group (Example: localhost,CPU "
+"Utilization,localhost,Disk Usage)"
+msgstr ""
+
+#: objectbrowser/help_text.py:160
+msgid "Servicegroups that are members of this servicegroup"
+msgstr ""
+
+#: objectbrowser/help_text.py:162
+msgid "Arbitrary notes or description of this servicegroup"
+msgstr ""
+
+#: objectbrowser/help_text.py:164 objectbrowser/help_text.py:166
+msgid "Arbitrary url to a site of your choice"
+msgstr ""
+
+#: objectbrowser/help_text.py:168
+msgid "Unique name for this contact (e.g. username@domain.com)"
+msgstr ""
+
+#: objectbrowser/help_text.py:170
+msgid "Human Friendly Name for this contact (e.g. Full Name)"
+msgstr ""
+
+#: objectbrowser/help_text.py:172
+msgid "List of groups that this contact is a member of."
+msgstr ""
+
+#: objectbrowser/help_text.py:174
+msgid "If this contact will receive host notifications."
+msgstr ""
+
+#: objectbrowser/help_text.py:176
+msgid "If this contact will receive service notifications."
+msgstr ""
+
+#: objectbrowser/help_text.py:178
+msgid "When will this contact receive host notifications"
+msgstr ""
+
+#: objectbrowser/help_text.py:180
+msgid "When will this contact receive service notifications"
+msgstr ""
+
+#: objectbrowser/help_text.py:182
+msgid "Which host notifications this contact will receive"
+msgstr ""
+
+#: objectbrowser/help_text.py:184
+msgid "Which service notifications this contact will receive"
+msgstr ""
+
+#: objectbrowser/help_text.py:186
+msgid "What command will be used to send host notifications to this contact"
+msgstr ""
+
+#: objectbrowser/help_text.py:188
+msgid "What command will be used to send service notifications to this contact"
+msgstr ""
+
+#: objectbrowser/help_text.py:190
+msgid "E-mail address of this contact"
+msgstr ""
+
+#: objectbrowser/help_text.py:192
+msgid "Pager number of this contact"
+msgstr ""
+
+#: objectbrowser/help_text.py:194
+msgid "Address of this contact"
+msgstr ""
+
+#: objectbrowser/help_text.py:196
+msgid "If this contact is able to submit commands to nagios command pipe"
+msgstr ""
+
+#: objectbrowser/help_text.py:200
+msgid "Unique name for this contact group (e.g. 'webservers')"
+msgstr ""
+
+#: objectbrowser/help_text.py:202
+msgid "Human Friendly Name (e.g. 'My Web Servers')"
+msgstr ""
+
+#: objectbrowser/help_text.py:204
+msgid "Every Contact listed here will be a member of this contactgroup"
+msgstr ""
+
+#: objectbrowser/help_text.py:206
+msgid "Every Contactgroup listed here will be a member of this contactgroup"
+msgstr ""
+
+#: objectbrowser/help_text.py:208
+msgid "Unique name for this timeperiod (.e.g. 'workhours')"
+msgstr ""
+
+#: objectbrowser/help_text.py:210
+msgid "Human Friendly name for this timeperiod"
+msgstr ""
+
+#: objectbrowser/help_text.py:215
+msgid "Unique name for this command"
+msgstr ""
+
+#: objectbrowser/help_text.py:217
+msgid "Command line of the command that will be executed"
+msgstr ""
+
+#: objectbrowser/tests.py:17
+#, python-format
+msgid ""
+"Parsed nagios.cfg, but found no objects, are you sure this is the right "
+"config file (%(config)s) ? "
+msgstr ""
+
+#: objectbrowser/tests.py:61
+#, python-format
+msgid "Expected status code 200 for page %(url)s"
+msgstr ""
+
+#: objectbrowser/tests.py:63
+#, python-format
+msgid "Unhandled exception while loading %(url)s: %(error)s"
+msgstr ""
+
+#: objectbrowser/views.py:72
+msgid "Unable to find object"
+msgstr ""
+
+#: objectbrowser/views.py:87
+msgid "Problem with saving object"
+msgstr ""
+
+#: objectbrowser/views.py:119
+msgid "Unable to get object"
+msgstr ""
+
+#: objectbrowser/views.py:130 objectbrowser/views.py:180
+#, python-format
+msgid "Object Saved to %(filename)s"
+msgstr ""
+
+#: objectbrowser/views.py:135
+msgid "Problem reading form input"
+msgstr ""
+
+#: objectbrowser/views.py:166
+#, python-format
+msgid "Could not find any object with id=\"%(object_id)s\" :/"
+msgstr ""
+
+#: objectbrowser/views.py:167
+msgid "object not found"
+msgstr ""
+
+#: objectbrowser/views.py:185 objectbrowser/views.py:789
+msgid "Could not validate form input"
+msgstr ""
+
+#: objectbrowser/views.py:197
+#, python-format
+msgid "Could not find host: %(error)s"
+msgstr ""
+
+#: objectbrowser/views.py:204
+#, python-format
+msgid "Could not find parent: %(error)s"
+msgstr ""
+
+#: objectbrowser/views.py:241 objectbrowser/views.py:288
+#: objectbrowser/views.py:428
+#, python-format
+msgid "Could not find contact: %(error)s"
+msgstr ""
+
+#: objectbrowser/views.py:283
+#, python-format
+msgid "Could not find servicegroup: %(error)s"
+msgstr ""
+
+#: objectbrowser/views.py:293 objectbrowser/views.py:331
+#: objectbrowser/views.py:433
+#, python-format
+msgid "Could not find contact_group: %(error)s"
+msgstr ""
+
+#: objectbrowser/views.py:298 objectbrowser/views.py:423
+#, python-format
+msgid "Could not find hostgroup: %(error)s"
+msgstr ""
+
+#: objectbrowser/views.py:304 objectbrowser/views.py:439
+#, python-format
+msgid "Could not find check_command: %(error)s"
+msgstr ""
+
+#: objectbrowser/views.py:306 objectbrowser/views.py:441
+msgid "You need to define a check command"
+msgstr ""
+
+#: objectbrowser/views.py:317
+#, python-format
+msgid "This Service is applied to every host in hostgroup %(hostgroup_name)s"
+msgstr ""
+
+#: objectbrowser/views.py:320
+msgid "This Service is applied to multiple hosts"
+msgstr ""
+
+#: objectbrowser/views.py:354 objectbrowser/views.py:418
+#, python-format
+msgid "Could not find service: %(error)s"
+msgstr ""
+
+#: objectbrowser/views.py:476
+msgid "Nagios Service has been reloaded since last configuration change"
+msgstr ""
+
+#: objectbrowser/views.py:478
+msgid "Adagios configuration cache is up-to-date"
+msgstr ""
+
+#: objectbrowser/views.py:487 objectbrowser/views.py:489
+msgid "OKConfig is installed and working"
+msgstr ""
+
+#: objectbrowser/views.py:567
+msgid "No documentation found"
+msgstr ""
+
+#: objectbrowser/views.py:570
+msgid ""
+"This seems to be an undefined option and no documentation was found for it. "
+"Perhaps it ismispelled."
+msgstr ""
+
+#: objectbrowser/views.py:604
+#, python-format
+msgid "saved changes to %(object_type)s '%(description)s'"
+msgstr ""
+
+#: objectbrowser/views.py:632
+#, python-format
+msgid ""
+"Could not find %(object_type)s '%(description)s' Maybe it has already been "
+"deleted."
+msgstr ""
+
+#: objectbrowser/views.py:680
+#, python-format
+msgid "Could not find %(object_type)s '%(description)s'"
+msgstr ""
+
+#: objectbrowser/views.py:702
+#, python-format
+msgid "Successfully copied %(object_type)s %(description)s"
+msgstr ""
+
+#: objectbrowser/views.py:779
+msgid "Something went wrong while calling this form"
+msgstr ""
+
+#: objectbrowser/views.py:877
+msgid "Please include group type"
+msgstr ""
+
+#: objectbrowser/views.py:895
+#, python-format
+msgid "Failed to add object: %(errortype)s %(error)s "
+msgstr ""
+
+#: objectbrowser/views.py:947
+msgid "be careful"
+msgstr ""
+
 #: okconfig_/forms.py:13
 msgid "Select a host"
 msgstr ""
@@ -834,6 +1623,46 @@ msgstr ""
 msgid "Error running scan"
 msgstr ""
 
+#: pnp/functions.py:56
+#, python-format
+msgid ""
+"Could not find pnp4nagios/index.php. Please specify it in adagios->settings-"
+">PNP. Tried %s"
+msgstr ""
+
+#: pnp/tests.py:22
+#, python-format
+msgid ""
+"We think pnp4nagios broker module is incorrectly configured. In nagios.cfg "
+"it looks like this: %s"
+msgstr ""
+
+#: pnp/tests.py:25
+#, python-format
+msgid ""
+"npcd broker_module module not found at \"%s\". Is nagios correctly "
+"configured?"
+msgstr ""
+
+#: pnp/tests.py:33
+msgid ""
+"npcd broker module has no config_file= argument. Is pnp4nagios correctly "
+"configured?"
+msgstr ""
+
+#: pnp/tests.py:35
+#, python-format
+msgid "PNP4nagios config file was not found (%s)."
+msgstr ""
+
+#: pnp/tests.py:38
+msgid "Nagios Broker module not found. Is pnp4nagios installed and configured?"
+msgstr ""
+
+#: pnp/tests.py:43
+msgid "Tried to get json from pnp4nagios but result was improper"
+msgstr ""
+
 #: rest/tests.py:34
 msgid "Expected 'addresslist' to appear in response"
 msgstr ""
@@ -858,31 +1687,151 @@ msgstr ""
 msgid "Unsupported format: '%s'. Valid formats: json xml txt"
 msgstr ""
 
+#: status/rest.py:90
+msgid "Success"
+msgstr ""
+
+#: status/rest.py:258
+msgid "command sent successfully"
+msgstr ""
+
+#: status/rest.py:506
+#, python-format
+msgid "Unsupported object type: %s"
+msgstr ""
+
+#: status/rest.py:557
+msgid "Could not resolve commandline. Object not found"
+msgstr ""
+
+#: status/rest.py:573 status/rest.py:591
+msgid "Object not found"
+msgstr ""
+
+#: status/rest.py:589
+msgid "Object saved"
+msgstr ""
+
+#: status/rest.py:681
+msgid "No message was entered"
+msgstr ""
+
+#: status/rest.py:705
+msgid "Autocreate not implemented yet"
+msgstr ""
+
+#: status/rest.py:713
+msgid "Command has been submitted."
+msgstr ""
+
+#: status/rest.py:767
+msgid "Lets wait for"
+msgstr ""
+
+#: status/rest.py:771
+msgid "livestatus ok"
+msgstr ""
+
+#: status/rest.py:773
+msgid "ok no more waiting for "
+msgstr ""
+
+#: status/tests.py:23
+msgid "Could not get status.requests from livestatus"
+msgstr ""
+
+#: status/tests.py:32
+#, python-format
+msgid ""
+" We think livestatus is incorrectly configured. In nagios.cfg it looks like "
+"this: %s"
+msgstr ""
+
+#: status/tests.py:36
+#, python-format
+msgid ""
+" Livestatus Broker module not found at \"%s\". Is nagios correctly "
+"configured?"
+msgstr ""
+
+#: status/tests.py:38
+#, python-format
+msgid ""
+" Livestatus socket file was not found (%s). Make sure nagios is running and "
+"that livestatus module is loaded"
+msgstr ""
+
+#: status/tests.py:41
+msgid "Nagios Broker module not found. Is livestatus installed and configured?"
+msgstr ""
+
+#: status/tests.py:70
+#, python-format
+msgid "Unhandled exception while loading %(url)s: %(e)s"
+msgstr ""
+
+#: status/utils.py:352
+#, python-format
+msgid "Business Process %s"
+msgstr ""
+
+#: status/utils.py:546
+#, python-format
+msgid "Could not load a BusinessProcess with name: %s"
+msgstr ""
+
+#: status/utils.py:621
+#, python-format
+msgid "Business process of type %s not found"
+msgstr ""
+
+#: status/views.py:76
+msgid ""
+"You have to provide an item via querystring so we know what to give you "
+"details for"
+msgstr ""
+
+#: status/views.py:208
+msgid "Need either a host_name or hostgroup_name parameter"
+msgstr ""
+
+#: status/views.py:262
+#, python-format
+msgid "Could not find any host named '%s'"
+msgstr ""
+
+#: status/views.py:286
+#, python-format
+msgid "Could not find any service named '%s'"
+msgstr ""
+
 #: status/templates/base_status.html:14
 msgid "Status"
 msgstr ""
 
-#: status/templates/base_status.html:31
+#: status/templates/base_status.html:31 status/templates/status_index.html:233
+#: templates/base.html:76
 msgid "Open Problems"
 msgstr ""
 
-#: status/templates/base_status.html:32
+#: status/templates/base_status.html:32 status/templates/status_index.html:234
+#: status/templates/snippets/status_servicelist_snippet_js.html:17
 msgid "All Problems"
 msgstr ""
 
-#: status/templates/base_status.html:33
+#: status/templates/base_status.html:33 status/templates/status_index.html:236
 msgid "All Acknowledged"
 msgstr ""
 
-#: status/templates/base_status.html:34
+#: status/templates/base_status.html:34 status/templates/status_index.html:237
 msgid "All in Downtime"
 msgstr ""
 
-#: status/templates/base_status.html:35
+#: status/templates/base_status.html:35 status/templates/status_index.html:235
 msgid "All OK"
 msgstr ""
 
-#: status/templates/base_status.html:36
+#: status/templates/base_status.html:36 status/templates/status_index.html:238
 msgid "Everything"
 msgstr ""
 
@@ -900,6 +1849,7 @@ msgid "Acknowledge"
 msgstr ""
 
 #: status/templates/base_status.html:53
+#: status/templates/snippets/status_acknowledgements_snippet.html:27
 msgid "Downtime"
 msgstr ""
 
@@ -935,6 +1885,9 @@ msgid ""
 msgstr ""
 
 #: status/templates/base_status.html:143 status/templates/base_status.html:178
+#: status/templates/snippets/status_acknowledgements_snippet.html:9
+#: status/templates/snippets/status_commentlist_snippet.html:9
+#: status/templates/snippets/status_downtimelist_snippet.html:9
 msgid "Author"
 msgstr ""
 
@@ -963,14 +1916,19 @@ msgid ""
 msgstr ""
 
 #: status/templates/base_status.html:186
+#: status/templates/snippets/status_downtimelist_snippet.html:12
 msgid "Start Time"
 msgstr ""
 
 #: status/templates/base_status.html:201
+#: status/templates/snippets/status_downtimelist_snippet.html:13
 msgid "End Time"
 msgstr ""
 
 #: status/templates/base_status.html:216
+#: status/templates/snippets/status_acknowledgements_snippet.html:12
+#: status/templates/snippets/status_commentlist_snippet.html:12
+#: status/templates/snippets/status_downtimelist_snippet.html:15
 msgid "Comment"
 msgstr ""
 
@@ -1039,18 +1997,337 @@ msgstr ""
 msgid "show debug information"
 msgstr ""
 
-#: status/templates/status_services.html:4
+#: status/templates/status_index.html:5
+msgid "Overview"
+msgstr ""
+
+#: status/templates/status_index.html:19
+#: status/templates/status_services.html:4 templates/base.html:74
 msgid "Status Overview"
+msgstr ""
+
+#: status/templates/status_index.html:26 templates/base.html:84
+msgid "Network Parents"
+msgstr ""
+
+#: status/templates/status_index.html:40 templates/base.html:81
+msgid "Hosts"
+msgstr ""
+
+#: status/templates/status_index.html:52
+#: status/templates/status_services.html:8 templates/base.html:82
+msgid "Services"
+msgstr ""
+
+#: status/templates/status_index.html:69
+msgid "Current Health"
+msgstr ""
+
+#: status/templates/status_index.html:73
+msgid "All hosts"
+msgstr ""
+
+#: status/templates/status_index.html:85
+msgid "All services"
+msgstr ""
+
+#: status/templates/status_index.html:104
+msgid "Top Alert Producers"
+msgstr ""
+
+#: status/templates/status_index.html:105
+msgid "Recent Alerts"
+msgstr ""
+
+#: status/templates/status_index.html:116
+msgid "Unhandled service problems"
+msgstr ""
+
+#: status/templates/status_index.html:246
+#, python-format
+msgid ""
+"Adagios version: %(adagios_version)s. Latest: <span id=\"latest_version\">..."
+"</span>"
 msgstr ""
 
 #: status/templates/status_services.html:6
 msgid "Service Overview"
 msgstr ""
 
-#: status/templates/status_services.html:8
-msgid "Services"
+#: status/templates/snippets/status_acknowledgements_snippet.html:8
+#: status/templates/snippets/status_commentlist_snippet.html:8
+#: status/templates/snippets/status_downtimelist_snippet.html:8
+msgid "Time"
+msgstr ""
+
+#: status/templates/snippets/status_acknowledgements_snippet.html:10
+#: status/templates/snippets/status_commentlist_snippet.html:10
+#: status/templates/snippets/status_downtimelist_snippet.html:10
+#: status/templates/snippets/status_servicelist_snippet_js.html:21
+msgid "Host"
+msgstr ""
+
+#: status/templates/snippets/status_acknowledgements_snippet.html:11
+#: status/templates/snippets/status_commentlist_snippet.html:11
+#: status/templates/snippets/status_downtimelist_snippet.html:11
+msgid "Service"
+msgstr ""
+
+#: status/templates/snippets/status_acknowledgements_snippet.html:24
+msgid "User Comment"
+msgstr ""
+
+#: status/templates/snippets/status_acknowledgements_snippet.html:30
+msgid "Flap"
+msgstr ""
+
+#: status/templates/snippets/status_acknowledgements_snippet.html:33
+msgid "Acknowledgement"
+msgstr ""
+
+#: status/templates/snippets/status_acknowledgements_snippet.html:57
+msgid "Delete comment"
+msgstr ""
+
+#: status/templates/snippets/status_contactgrouplist_snippet.html:6
+msgid "Group Name"
+msgstr ""
+
+#: status/templates/snippets/status_contactgrouplist_snippet.html:7
+#: status/templates/snippets/status_contactlist_snippet.html:7
+#: status/templates/snippets/status_servicegrouplist_snippet.html:10
+msgid "Alias"
+msgstr ""
+
+#: status/templates/snippets/status_contactgrouplist_snippet.html:8
+msgid "Members"
+msgstr ""
+
+#: status/templates/snippets/status_contactlist_snippet.html:6
+msgid "Contact Name"
+msgstr ""
+
+#: status/templates/snippets/status_contactlist_snippet.html:8
+msgid "E-mail"
+msgstr ""
+
+#: status/templates/snippets/status_contactlist_snippet.html:9
+msgid "Pager"
+msgstr ""
+
+#: status/templates/snippets/status_contactlist_snippet.html:10
+msgid "Host Notification Period"
+msgstr ""
+
+#: status/templates/snippets/status_contactlist_snippet.html:11
+msgid "Service Notification Period"
+msgstr ""
+
+#: status/templates/snippets/status_downtimelist_snippet.html:14
+#: status/templates/snippets/status_servicelist_snippet_js.html:24
+msgid "Duration"
+msgstr ""
+
+#: status/templates/snippets/status_servicegrouplist_snippet.html:9
+msgid "Servicegroup"
+msgstr ""
+
+#: status/templates/snippets/status_servicegrouplist_snippet.html:11
+msgid "Number of services"
+msgstr ""
+
+#: status/templates/snippets/status_servicegrouplist_snippet.html:12
+msgid "Notes"
+msgstr ""
+
+#: status/templates/snippets/status_servicegrouplist_snippet.html:13
+msgid "urls"
+msgstr ""
+
+#: status/templates/snippets/status_servicegrouplist_snippet.html:26
+msgid "notes"
+msgstr ""
+
+#: status/templates/snippets/status_servicegrouplist_snippet.html:29
+msgid "action url"
+msgstr ""
+
+#: status/templates/snippets/status_servicelist_snippet_js.html:14
+msgid "All"
+msgstr ""
+
+#: status/templates/snippets/status_servicelist_snippet_js.html:15
+msgid "None"
+msgstr ""
+
+#: status/templates/snippets/status_servicelist_snippet_js.html:16
+msgid "Unhandled Problems"
+msgstr ""
+
+#: status/templates/snippets/status_servicelist_snippet_js.html:22
+msgid "Service Check"
+msgstr ""
+
+#: status/templates/snippets/status_servicelist_snippet_js.html:25
+msgid "Last Check"
 msgstr ""
 
 #: status/templatetags/adagiostags.py:82
 msgid " and "
+msgstr ""
+
+#: status/templatetags/adagiostags.py:176
+msgid "No duration"
+msgstr ""
+
+#: templates/404.html:5
+msgid "404 - File not found"
+msgstr ""
+
+#: templates/404.html:6
+msgid "Ooops :("
+msgstr ""
+
+#: templates/base.html:72
+msgid "Shortcuts"
+msgstr ""
+
+#: templates/base.html:83
+msgid "Contacts"
+msgstr ""
+
+#: templates/base.html:85
+msgid "Configuration"
+msgstr ""
+
+#: templates/base.html:88
+msgid "Reports"
+msgstr ""
+
+#: templates/base.html:90
+msgid "State History"
+msgstr ""
+
+#: templates/base.html:91
+msgid "Log"
+msgstr ""
+
+#: templates/base.html:92
+msgid "Comments"
+msgstr ""
+
+#: templates/base.html:93
+msgid "Downtimes"
+msgstr ""
+
+#: templates/base.html:96
+msgid "Groups"
+msgstr ""
+
+#: templates/base.html:98
+msgid "Hostgroups"
+msgstr ""
+
+#: templates/base.html:99
+msgid "Servicegroups"
+msgstr ""
+
+#: templates/base.html:100
+msgid "Contactgroups"
+msgstr ""
+
+#: templates/base.html:103
+msgid "Experimental"
+msgstr ""
+
+#: templates/base.html:105
+msgid "Map"
+msgstr ""
+
+#: templates/base.html:106
+msgid "Performance Data 1"
+msgstr ""
+
+#: templates/base.html:107
+msgid "Performance Data 2"
+msgstr ""
+
+#: templates/base.html:108
+msgid "Business Intelligence"
+msgstr ""
+
+#: templates/base.html:109
+msgid "Dashboard"
+msgstr ""
+
+#: templates/base.html:158
+msgid "Make a wish"
+msgstr ""
+
+#: templates/base.html:175
+msgid "Warning!"
+msgstr ""
+
+#: templates/base.html:183
+msgid "Info!"
+msgstr ""
+
+#: templates/base.html:187
+msgid "Nagios is reloading..."
+msgstr ""
+
+#: templates/bootstrap_field.html:23
+msgid "ERROR! You tried to include nonexisting field"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:22
+msgid "Configure"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:88
+msgid "My Profile"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:90
+msgid "Sign Out"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:99
+msgid "Report Bug"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:100
+msgid "Make Suggestion"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:101
+msgid "Project Webpage"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:103
+msgid "Missing Plugins"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:104
+msgid "Edit nagios.cfg"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:105
+msgid "Nagios Service"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:106
+msgid "Object History"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:107
+msgid "Config Health"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:108
+msgid "Settings"
+msgstr ""
+
+#: templates/snippets/top_navigation_bar.html:110
+msgid "PNP Integration"
 msgstr ""
