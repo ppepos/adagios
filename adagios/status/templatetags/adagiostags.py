@@ -173,4 +173,4 @@ def duration(value, arg = ''):
     else:
 
         # Provide 'No duration' message
-        return 'No duration'
+        return _('No duration')
