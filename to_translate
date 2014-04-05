@@ -161,26 +161,26 @@
 
 8
 
-./adagios/contrib/lib/dashboards/bi.html
-./adagios/contrib/lib/dashboards/raymii.html
-./adagios/contrib/lib/experimental/network_parents.html
-./adagios/contrib/lib/examples/boilerplate01.html
-./adagios/contrib/lib/examples/hello_world.html
-./adagios/contrib/lib/examples/list_all_hosts.html
-./adagios/contrib/templates/contrib_index.html
-./adagios/templates/snippets/top_navigation_bar.html
-./adagios/templates/bootstrap_fields.html
-./adagios/templates/404.html
-./adagios/templates/bootstrap_field.html
-./adagios/templates/base.html
-./adagios/status/templates/status_index.html
-./adagios/status/templates/snippets/status_contactlist_snippet.html
-./adagios/status/templates/snippets/status_downtimelist_snippet.html
-./adagios/status/templates/snippets/status_servicegrouplist_snippet.html
-./adagios/status/templates/snippets/status_acknowledgements_snippet.html
-./adagios/status/templates/snippets/status_commentlist_snippet.html
-./adagios/status/templates/snippets/status_servicelist_snippet_js.html
-./adagios/status/templates/snippets/status_contactgrouplist_snippet.html
+./adagios/contrib/lib/dashboards/bi.html OK
+./adagios/contrib/lib/dashboards/raymii.html OK
+./adagios/contrib/lib/experimental/network_parents.html OK
+./adagios/contrib/lib/examples/boilerplate01.html OK
+./adagios/contrib/lib/examples/hello_world.html OK
+./adagios/contrib/lib/examples/list_all_hosts.html OK
+./adagios/contrib/templates/contrib_index.html OK
+./adagios/templates/snippets/top_navigation_bar.html OK
+./adagios/templates/bootstrap_fields.html OK
+./adagios/templates/404.html OK
+./adagios/templates/bootstrap_field.html OK
+./adagios/templates/base.html OK
+./adagios/status/templates/status_index.html OK
+./adagios/status/templates/snippets/status_contactlist_snippet.html OK
+./adagios/status/templates/snippets/status_downtimelist_snippet.html OK
+./adagios/status/templates/snippets/status_servicegrouplist_snippet.html OK
+./adagios/status/templates/snippets/status_acknowledgements_snippet.html OK
+./adagios/status/templates/snippets/status_commentlist_snippet.html OK
+./adagios/status/templates/snippets/status_servicelist_snippet_js.html OK
+./adagios/status/templates/snippets/status_contactgrouplist_snippet.html OK
 
 9
 
