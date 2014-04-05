@@ -92,49 +92,49 @@
 
 5
 
-./adagios/objectbrowser/templates/add_to_group.html
-./adagios/objectbrowser/templates/list_object_types.html
-./adagios/objectbrowser/templates/edit_command.html
-./adagios/objectbrowser/templates/edit_service.html
-./adagios/objectbrowser/templates/edit_contactgroup.html
-./adagios/objectbrowser/templates/edit_servicedependency.html
-./adagios/objectbrowser/templates/add_object.html
-./adagios/objectbrowser/templates/delete_object.html
-./adagios/objectbrowser/templates/edit_contact.html
-./adagios/objectbrowser/templates/base_objectbrowser.html
-./adagios/objectbrowser/templates/error.html
-./adagios/objectbrowser/templates/bulk_delete.html
-./adagios/objectbrowser/templates/edit_configfile.html
-./adagios/objectbrowser/templates/edit_hostdependency.html
-./adagios/objectbrowser/templates/edit_object.html
-./adagios/objectbrowser/templates/show_plugins.html
-./adagios/objectbrowser/templates/bulk_edit.html
+./adagios/objectbrowser/templates/add_to_group.html OK
+./adagios/objectbrowser/templates/list_object_types.html OK
+./adagios/objectbrowser/templates/edit_command.html OK
+./adagios/objectbrowser/templates/edit_service.html OK
+./adagios/objectbrowser/templates/edit_contactgroup.html OK
+./adagios/objectbrowser/templates/edit_servicedependency.html OK
+./adagios/objectbrowser/templates/add_object.html OK
+./adagios/objectbrowser/templates/delete_object.html OK
+./adagios/objectbrowser/templates/edit_contact.html OK
+./adagios/objectbrowser/templates/base_objectbrowser.html OK
+./adagios/objectbrowser/templates/error.html OK
+./adagios/objectbrowser/templates/bulk_delete.html OK
+./adagios/objectbrowser/templates/edit_configfile.html OK
+./adagios/objectbrowser/templates/edit_hostdependency.html OK
+./adagios/objectbrowser/templates/edit_object.html OK
+./adagios/objectbrowser/templates/show_plugins.html OK
+./adagios/objectbrowser/templates/bulk_edit.html Ok
 ./adagios/objectbrowser/templates/bulk_copy.html
 ./adagios/objectbrowser/templates/edit_hostgroup.html
 ./adagios/objectbrowser/templates/edit_servicegroup.html
 
 6
 
-./adagios/objectbrowser/templates/edit_all.html
-./adagios/objectbrowser/templates/search_objects.html
-./adagios/myapp/templates/myapp_helloworld.html
-./adagios/myapp/templates/myapp_menubar.html
-./adagios/bi/templates/business_process_edit.html
-./adagios/bi/templates/business_process_add_subprocess.html
-./adagios/bi/templates/business_process_list.html
-./adagios/bi/templates/business_process_add_graph.html
-./adagios/bi/templates/business_process_standalone.html
-./adagios/bi/templates/business_process_generic.html
-./adagios/bi/templates/business_process_view.html
-./adagios/bi/templates/business_process_delete.html
-./adagios/rest/templates/javascript.html
-./adagios/rest/templates/function_form.html
-./adagios/rest/templates/list_modules.html
-./adagios/rest/templates/index.html
-./adagios/etc/adagios/pages.d/iceland.adagios.org.html
-./adagios/misc/templates/snippets/misc_mail_objectlist.html
-./adagios/misc/templates/settings.html
-./adagios/misc/templates/nagios.html
+./adagios/objectbrowser/templates/edit_all.html OK
+./adagios/objectbrowser/templates/search_objects.html OK
+./adagios/myapp/templates/myapp_helloworld.html OK
+./adagios/myapp/templates/myapp_menubar.html OK
+./adagios/bi/templates/business_process_edit.html OK
+./adagios/bi/templates/business_process_add_subprocess.html OK
+./adagios/bi/templates/business_process_list.html OK
+./adagios/bi/templates/business_process_add_graph.html OK
+./adagios/bi/templates/business_process_standalone.html OK
+./adagios/bi/templates/business_process_generic.html OK
+./adagios/bi/templates/business_process_view.html OK
+./adagios/bi/templates/business_process_delete.html OK
+./adagios/rest/templates/javascript.html OK
+./adagios/rest/templates/function_form.html OK
+./adagios/rest/templates/list_modules.html OK
+./adagios/rest/templates/index.html OK
+./adagios/etc/adagios/pages.d/iceland.adagios.org.html OK
+./adagios/misc/templates/snippets/misc_mail_objectlist.html OK
+./adagios/misc/templates/settings.html OK
+./adagios/misc/templates/nagios.html OK
 
 7
 
